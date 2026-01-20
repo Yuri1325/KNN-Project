@@ -83,7 +83,7 @@ k_result = []
 ret,result,neighbours,dist = knn_model.findNearest(test_images[:100],k=245) 
 
 result =  result.flatten()
-for i in range(100):
+for i in range(100): 
     plt.figure(figsize=(6, 6))
     plt.imshow(raw_images[i])
     plt.title(f"Label: {raw_labels[0][i]} Model Prediction: {result[i]}")
